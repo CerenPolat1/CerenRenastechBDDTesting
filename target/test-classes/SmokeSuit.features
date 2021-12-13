@@ -1,1 +1,27 @@
 Feature: Smoke Suit
+
+ @Smoke
+  Scenario: Verify text
+    Given The user wants to go to url.
+    When The user wants to see "Mother Elephant With Babies Soft Toy"
+
+
+
+  @Smoke
+  Scenario: Verify if url contains some words
+    Given The user wants to see that thee url contains "payment-gateway"
+
+ @Smoke
+  Scenario:Verify Payment
+    Given  The user want to see quantity is "5"
+    When The user wants to click buy now button
+    Then The user wants to fill out some information
+      |Card Number|1234567890123456|
+      |Expriation Month|01         |
+      |Expiration Year |2028       |
+      |CVV Code        |123        |
+    Then The user wants to click pay button
+    Then The user wants to see the sentence "Payment successfull!"
+
+
+

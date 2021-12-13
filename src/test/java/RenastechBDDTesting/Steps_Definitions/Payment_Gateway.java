@@ -10,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.Select;
+
 
 import java.util.Map;
 
@@ -39,6 +39,7 @@ PaymentDone_Page paymentdone=new PaymentDone_Page();
     @Given("The user wants to see price as {string}")
     public void the_user_wants_to_see_price_as(String pricee) {
 
+         //Assert.assertTrue(false); //retest icin
         Assert.assertEquals(home.getPrice().getText(),pricee);
 
         System.out.println("price is 20$");
@@ -49,7 +50,7 @@ PaymentDone_Page paymentdone=new PaymentDone_Page();
     @Given("The user wants to see that thee url contains {string}")
     public void the_user_wants_to_see_that_thee_url_contains(String part) {
 
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(part));
+      Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(part));
         System.out.println("url contains payment gateaway");
     }
 

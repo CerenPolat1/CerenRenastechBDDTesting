@@ -1,21 +1,21 @@
 
 Feature: DemoSite
 
-@First
+@First @Smoke @Regression
 Scenario: Verify text
 Given The user wants to go to url.
 When The user wants to see "Mother Elephant With Babies Soft Toy"
 
 
-  @Second
+  @Second @Regression
   Scenario: Verify price.
   Given The user wants to see price as "Price: $20"
 
-    @Third
+    @Third  @Smoke @Regression
     Scenario: Verify if url contains some words
     Given The user wants to see that thee url contains "payment-gateway"
 
-      @Forth
+      @Forth @Smoke   @Regression
       Scenario:Verify Payment
       Given  The user want to see quantity is "5"
       When The user wants to click buy now button
@@ -27,7 +27,7 @@ When The user wants to see "Mother Elephant With Babies Soft Toy"
       Then The user wants to click pay button
       Then The user wants to see the sentence "Payment successfull!"
 
-        @Fifth
+        @Fifth  @Regression
         Scenario Outline:Verify!!
         Given The user wants to see some "<Quantities>"
           When The user wants to click buy button

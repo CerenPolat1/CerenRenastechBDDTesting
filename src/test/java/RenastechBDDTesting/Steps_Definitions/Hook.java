@@ -33,8 +33,7 @@ public class Hook {
         }
 
 
-
-       // Driver.closeDriver();
+      Driver.closeDriver();
 
     }
 }
