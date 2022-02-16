@@ -42,5 +42,8 @@ When The user wants to see "Mother Elephant With Babies Soft Toy"
           |2        |
           |2        |
 
-
+Scenario:
+  Given The user wants to go to url.
+  When The user wannnts to to something
+  Then user blah blah
 

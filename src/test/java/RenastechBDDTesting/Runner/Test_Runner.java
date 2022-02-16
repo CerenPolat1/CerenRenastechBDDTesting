@@ -9,12 +9,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features ="src/test/resources",
         glue = "RenastechBDDTesting.Steps_Definitions",
-        tags = "@Regression",
+        tags = "@Smoke",
         dryRun=false
 
 )
 
 public class Test_Runner {
-
 }
 
